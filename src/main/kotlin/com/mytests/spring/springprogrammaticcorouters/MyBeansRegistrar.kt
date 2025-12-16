@@ -11,6 +11,6 @@ class MyBeansRegistrar : BeanRegistrarDsl({
     registerBean<CourseHandler>()
     registerBean(name = "courseRoutes"){ courseRoutes(bean()) }
     registerBean<StudentHandler>()
-    registerBean{ studentRoutes(bean()) }
+    registerBean(name = "studentRoutes"){ studentRoutes(bean()) }
 }
 )
